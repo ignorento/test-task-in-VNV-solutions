@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Groups
+{% endblock %}
+
+
+{% block content %}
+<body>
+    <h1>All groups</h1>
+
+    {% for group in groups %}
+        {{group.id}}
+    {{group.name}}
+    {{group.description}}
+
+
+
+    {% endfor %}
+
+</body>
+{% endblock %}
