@@ -18,9 +18,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from users.views import users_view
+from groups.views import groups_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", users_view, name="users")
+    path("", users_view, name="users"),
+    path("groups/", groups_view, name="groups")
 
 ]
